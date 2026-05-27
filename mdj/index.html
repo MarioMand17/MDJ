@@ -1,0 +1,709 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MDJ Soluciones Metálicas | Pérgolas y Estructuras en Querétaro</title>
+    <meta name="description" content="Diseño, fabricación e instalación de pérgolas modernas, estructuras metálicas, portones y herrería de alta calidad en Corregidora, Querétaro y San Miguel de Allende. ¡Solicita tu cotización!">
+    <meta name="keywords" content="MDJ Soluciones Metálicas, estructuras metalicas Queretaro, pergolas queretaro, portones metalicos queretaro, herreria corregidora">
+    <!-- Favicon -->
+    <link rel="icon" type="image/png" href="assets/favicon.png">
+    <link rel="shortcut icon" href="assets/favicon.png" type="image/x-icon">
+    
+    <!-- Google Fonts: Outfit (headings) & Inter (body) -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Outfit:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+    
+    <!-- FontAwesome for Premium Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="styles.css">
+    
+    <!-- Three.js for 3D Background -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.min.js"></script>
+</head>
+<body>
+    <div class="scroll-progress-bar" id="scroll-progress-bar"></div>
+
+    <!-- Header / Navigation -->
+    <header class="main-header" id="main-header">
+        <div class="container navbar-container">
+            <a href="#" class="logo">
+                <img src="assets/logo.png" alt="MDJ Soluciones Metálicas Logo" class="logo-img">
+                <span class="logo-text">MDJ<span> Soluciones</span></span>
+            </a>
+            
+            <nav class="nav-menu" id="nav-menu">
+                <ul>
+                    <li><a href="#inicio" class="nav-link active">Inicio</a></li>
+                    <li><a href="#nosotros" class="nav-link">Nosotros</a></li>
+                    <li><a href="#servicios" class="nav-link">Servicios</a></li>
+                    <li><a href="#proyectos" class="nav-link">Proyectos</a></li>
+                    <li><a href="#contacto" class="nav-link">Contacto</a></li>
+                </ul>
+            </nav>
+            
+            <div class="nav-actions">
+                <a href="#contacto" class="btn btn-primary btn-sm btn-nav">
+                    <i class="fa-solid fa-paper-plane"></i> Cotizar
+                </a>
+                <button class="mobile-menu-toggle" id="mobile-menu-toggle" aria-label="Abrir menú">
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                </button>
+            </div>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section id="inicio" class="hero-section">
+        <canvas id="hero-3d-canvas" class="hero-3d-canvas"></canvas>
+        <div class="hero-bg-overlay"></div>
+        <div class="container hero-container">
+            <div class="hero-content">
+                <div class="badge">MDJ Soluciones Metálicas | Santa Bárbara, Corregidora</div>
+                <h1 class="hero-title">Definimos Espacios con <span class="text-gradient">Precisión y Estilo</span></h1>
+                <p class="hero-description">Diseñamos y fabricamos pérgolas de diseño, naves industriales de gran claro, techumbres y herrería residencial de alta gama para hogares, comercios e industrias.</p>
+                <div class="hero-buttons">
+                    <a href="#contacto" class="btn btn-primary btn-lg">
+                        <i class="fa-solid fa-paper-plane"></i> Cotizar Proyecto
+                    </a>
+                    <a href="#proyectos" class="btn btn-secondary btn-lg">
+                        <i class="fa-solid fa-images"></i> Ver Proyectos
+                    </a>
+                </div>
+            </div>
+            <div class="hero-visual">
+                <div class="hero-img-wrapper">
+                    <img src="assets/pergola.png" alt="Pérgola moderna de acero y madera" class="hero-img">
+                </div>
+            </div>
+        </div>
+        
+        <div class="scroll-indicator">
+            <span class="mouse">
+                <span class="wheel"></span>
+            </span>
+            <span class="arrow"></span>
+        </div>
+
+        <div class="hero-waves">
+            <svg data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 120" preserveAspectRatio="none">
+                <path d="M321.39,56.44c58-10.79,114.16-30.13,172-41.86,82.39-16.72,168.19-17.73,250.45-.39C823.78,31,906.67,72,985.66,92.83c70.05,18.48,146.53,26.09,214.34,3V120H0V0C26.9,8.75,57.05,18.3,80.9,23,143,35.24,207.28,45.41,273.5,48.28,290,49,305.77,54,321.39,56.44Z" class="shape-fill"></path>
+            </svg>
+        </div>
+    </section>
+
+    <!-- Stats Bar -->
+    <section class="stats-section">
+        <div class="container">
+            <div class="stats-grid">
+                <div class="stat-item">
+                    <span class="stat-number">150+</span>
+                    <span class="stat-label">Pérgolas Instaladas</span>
+                </div>
+                <div class="stat-item">
+                    <span class="stat-number">10+</span>
+                    <span class="stat-label">Años de Experiencia</span>
+                </div>
+                <div class="stat-item">
+                    <span class="stat-number">99%</span>
+                    <span class="stat-label">Clientes Satisfechos</span>
+                </div>
+                <div class="stat-item">
+                    <span class="stat-number">100%</span>
+                    <span class="stat-label">Garantía de Calidad</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="nosotros" class="about-section section-padding reveal-parent">
+        <div class="container">
+            <div class="section-header text-center">
+                <span class="section-subtitle">¿Quiénes Somos?</span>
+                <h2 class="section-title">Especialistas en Herrería de Vanguardia</h2>
+                <div class="section-divider"></div>
+            </div>
+            
+            <div class="about-grid">
+                <div class="about-info reveal">
+                    <h3>Construimos con acero y pasión</h3>
+                    <p>En <strong>MDJ Soluciones Metálicas</strong> convertimos ideas en estructuras duraderas. Nos especializamos en la conceptualización, fabricación y montaje de pérgolas de diseño, techados, portones minimalistas y estructuras de soporte pesado en Corregidora, Querétaro, San Miguel de Allende y alrededores.</p>
+                    <p>Nuestra filosofía se basa en tres pilares fundamentales:</p>
+                    
+                    <ul class="about-features">
+                        <li>
+                            <i class="fa-solid fa-shield-halved feature-icon"></i>
+                            <div>
+                                <strong>Materiales Certificados:</strong> Usamos acero de primera y acabados con recubrimiento anticorrosivo de alto rendimiento para garantizar durabilidad en exteriores.
+                            </div>
+                        </li>
+                        <li>
+                            <i class="fa-solid fa-ruler-combined feature-icon"></i>
+                            <div>
+                                <strong>Diseño a la Medida:</strong> Cada proyecto es único. Nos adaptamos a la arquitectura de tu hogar u oficina para crear un diseño que complemente tu entorno.
+                            </div>
+                        </li>
+                        <li>
+                            <i class="fa-solid fa-user-check feature-icon"></i>
+                            <div>
+                                <strong>Instalación Profesional:</strong> Nuestro equipo de instaladores cuenta con la capacitación y equipo de seguridad para un montaje limpio, seguro y puntual.
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+                
+                <div class="about-gallery reveal">
+                    <div class="about-img-container">
+                        <img src="assets/estructura.png" alt="Construcción de estructura metálica" class="about-img-main">
+                        <div class="about-badge">
+                            <span class="years">10</span>
+                            <span class="text">Años Creando Estructuras Fuertes</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Services Section -->
+    <section id="servicios" class="services-section section-padding reveal-parent">
+        <div class="container">
+            <div class="section-header text-center">
+                <span class="section-subtitle">Nuestros Servicios</span>
+                <h2 class="section-title">¿Qué Fabricamos para Ti?</h2>
+                <div class="section-divider"></div>
+            </div>
+            
+            <div class="services-grid">
+                <!-- Card 1 -->
+                <div class="service-card reveal-stagger">
+                    <div class="service-img-wrapper">
+                        <img src="assets/real_pergola1.jpg" alt="Pérgolas de diseño de MDJ" class="service-img">
+                    </div>
+                    <div class="service-content">
+                        <div class="service-icon-wrapper">
+                            <i class="fa-solid fa-sun"></i>
+                        </div>
+                        <h3>Pérgolas de Diseño</h3>
+                        <p>Pérgolas modernas de acero estructural combinadas con plafones corte láser, policarbonato celular, cristal templado o detalles de madera. Ideales para terrazas y jardines.</p>
+                        <a href="#contacto" class="service-link">Cotizar esta opción <i class="fa-solid fa-arrow-right"></i></a>
+                    </div>
+                </div>
+                
+                <!-- Card 2 -->
+                <div class="service-card reveal-stagger">
+                    <div class="service-img-wrapper">
+                        <img src="assets/estructura.png" alt="Construcción de naves industriales por MDJ" class="service-img">
+                    </div>
+                    <div class="service-content">
+                        <div class="service-icon-wrapper">
+                            <i class="fa-solid fa-industry"></i>
+                        </div>
+                        <h3>Naves Industriales & Estructuras</h3>
+                        <p>Especialistas en el cálculo estructural, diseño, fabricación e instalación de naves industriales, almacenes, techumbres de gran claro, entrepisos y soportes metálicos pesados.</p>
+                        <a href="#contacto" class="service-link">Cotizar esta opción <i class="fa-solid fa-arrow-right"></i></a>
+                    </div>
+                </div>
+                
+                <!-- Card 3 -->
+                <div class="service-card reveal-stagger">
+                    <div class="service-img-wrapper">
+                        <img src="assets/porton.png" alt="Portones automatizados por MDJ" class="service-img">
+                    </div>
+                    <div class="service-content">
+                        <div class="service-icon-wrapper">
+                            <i class="fa-solid fa-door-closed"></i>
+                        </div>
+                        <h3>Portones Automatizados</h3>
+                        <p>Portones residenciales modernos listos para automatizar (abatibles, corredizos, ascendentes) con motores rápidos de última generación, seguros y silenciosos.</p>
+                        <a href="#contacto" class="service-link">Cotizar esta opción <i class="fa-solid fa-arrow-right"></i></a>
+                    </div>
+                </div>
+
+                <!-- Card 4 -->
+                <div class="service-card reveal-stagger">
+                    <div class="service-img-wrapper">
+                        <img src="assets/real_pergola3.jpg" alt="Herrería de diseño por MDJ" class="service-img">
+                    </div>
+                    <div class="service-content">
+                        <div class="service-icon-wrapper">
+                            <i class="fa-solid fa-screwdriver-wrench"></i>
+                        </div>
+                        <h3>Herrería de Diseño</h3>
+                        <p>Herrería decorativa y estructural fina: barandales de acero y cristal templado, puertas de seguridad personalizadas, pasamanos e instalaciones especiales a la medida.</p>
+                        <a href="#contacto" class="service-link">Cotizar esta opción <i class="fa-solid fa-arrow-right"></i></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Projects Section (Con carruseles interactivos) -->
+    <section id="proyectos" class="portfolio-section section-padding reveal-parent">
+        <div class="container">
+            <div class="section-header text-center">
+                <span class="section-subtitle">Nuestra Trayectoria</span>
+                <h2 class="section-title">Proyectos Recientes</h2>
+                <div class="section-divider"></div>
+            </div>
+
+            <div class="projects-outer-carousel reveal">
+                <div class="projects-outer-track-container">
+                    <div class="projects-outer-track">
+                        
+                        <!-- Category Card 1: Pérgolas -->
+                        <div class="project-card-3d">
+                            <div class="project-card-header">
+                                <h3>Pérgolas Residenciales</h3>
+                                <p class="project-subtitle">Diseño Láser, Acero & Madera</p>
+                            </div>
+                            <div class="project-card-body">
+                                <div class="project-carousel" id="carousel-pergolas">
+                                    <div class="carousel-track-container">
+                                        <div class="carousel-track">
+                                            <div class="carousel-slide">
+                                                <img src="assets/real_pergola1.jpg" alt="Pérgola con plafón de corte láser geométrico de MDJ">
+                                                <div class="slide-caption">Pérgola con Plafón de Corte Láser Geométrico</div>
+                                            </div>
+                                            <div class="carousel-slide">
+                                                <img src="assets/real_pergola2.jpg" alt="Pérgola residencial minimalista para terraza de MDJ">
+                                                <div class="slide-caption">Pérgola Residencial en Terraza</div>
+                                            </div>
+                                            <div class="carousel-slide">
+                                                <img src="assets/real_pergola3.jpg" alt="Pérgola con plafón de hojas corte láser de MDJ">
+                                                <div class="slide-caption">Pérgola con Plafón de Corte Láser Orgánico</div>
+                                            </div>
+                                            <div class="carousel-slide">
+                                                <img src="assets/real_pergola4.jpg" alt="Pérgola para asador con policarbonato de MDJ">
+                                                <div class="slide-caption">Pérgola para Asador y Cochera</div>
+                                            </div>
+                                            <div class="carousel-slide">
+                                                <img src="assets/real_pergola5.jpg" alt="Techumbre carport en cochera residencial de MDJ">
+                                                <div class="slide-caption">Cochera Carport de Acero</div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    
+                                    <!-- Navigation Buttons -->
+                                    <button class="carousel-btn prev" aria-label="Anterior"><i class="fa-solid fa-chevron-left"></i></button>
+                                    <button class="carousel-btn next" aria-label="Siguiente"><i class="fa-solid fa-chevron-right"></i></button>
+                                    
+                                    <!-- Indicators dots -->
+                                    <div class="carousel-dots"></div>
+                                </div>
+                                
+                                <div class="project-details">
+                                    <p>Nuestras pérgolas combinan perfiles de acero estructural de alta resistencia con acabados finos. Integramos techados de policarbonato alemán, cristal templado y plafones decorativos troquelados en láser para crear sombras estéticas únicas.</p>
+                                    <ul class="project-specs">
+                                        <li><i class="fa-solid fa-check"></i> Plafón con diseño a elegir (geométrico/orgánico)</li>
+                                        <li><i class="fa-solid fa-check"></i> Protección contra rayos UV e impermeabilidad</li>
+                                        <li><i class="fa-solid fa-check"></i> Iluminación LED empotrada integrada</li>
+                                    </ul>
+                                    <div class="project-buttons">
+                                        <a href="#contacto" class="btn btn-primary btn-md">
+                                            <i class="fa-solid fa-paper-plane"></i> Cotizar Pérgola
+                                        </a>
+                                        <a href="assets/catalogo_pergolas.pdf" download="Catalogo_Pergolas_MDJ.pdf" class="btn btn-secondary btn-md">
+                                            <i class="fa-solid fa-circle-down"></i> Catálogo PDF
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Category Card 2: Estructuras Metálicas -->
+                        <div class="project-card-3d">
+                            <div class="project-card-header">
+                                <h3>Estructuras Metálicas</h3>
+                                <p class="project-subtitle">Diseño y Montaje de Soporte Pesado</p>
+                            </div>
+                            <div class="project-card-body">
+                                <div class="project-carousel" id="carousel-estructuras">
+                                    <div class="carousel-track-container">
+                                        <div class="carousel-track">
+                                            <div class="carousel-slide">
+                                                <img src="assets/real_estructura1.jpg" alt="Estructura de acero y soporte de entrepiso por MDJ">
+                                                <div class="slide-caption">Estructura de Acero y Soporte de Entrepiso</div>
+                                            </div>
+                                            <div class="carousel-slide">
+                                                <img src="assets/real_estructura2.jpg" alt="Montaje de viguetas metálicas en obra por MDJ">
+                                                <div class="slide-caption">Montaje de Viguetas Metálicas en Obra</div>
+                                            </div>
+                                            <div class="carousel-slide">
+                                                <img src="assets/real_estructura3.jpg" alt="Estructura de acero para edificación de dos niveles por MDJ">
+                                                <div class="slide-caption">Estructura de Acero para Edificación de Dos Niveles</div>
+                                            </div>
+                                            <div class="carousel-slide">
+                                                <img src="assets/real_estructura4.jpg" alt="Soporte estructural IPR en construcción por MDJ">
+                                                <div class="slide-caption">Soporte Estructural IPR en Construcción</div>
+                                            </div>
+                                            <div class="carousel-slide">
+                                                <img src="assets/real_estructura5.jpg" alt="Pórtico metálico de refuerzo estructural por MDJ">
+                                                <div class="slide-caption">Pórtico Metálico de Refuerzo Estructural</div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    
+                                    <button class="carousel-btn prev" aria-label="Anterior"><i class="fa-solid fa-chevron-left"></i></button>
+                                    <button class="carousel-btn next" aria-label="Siguiente"><i class="fa-solid fa-chevron-right"></i></button>
+                                    
+                                    <div class="carousel-dots"></div>
+                                </div>
+                                
+                                <div class="project-details">
+                                    <p>Fabricamos y montamos estructuras de acero personalizadas para todo tipo de proyectos. Diseñamos tapancos, marcos rígidos, viguetas IPR y sistemas de soporte de carga pesada con altos estándares de soldadura y seguridad.</p>
+                                    <ul class="project-specs">
+                                        <li><i class="fa-solid fa-check"></i> Fabricación a la medida con perfiles IPR, PTR y HSS</li>
+                                        <li><i class="fa-solid fa-check"></i> Soldadores calificados y procesos controlados</li>
+                                        <li><i class="fa-solid fa-check"></i> Refuerzo estructural para ampliaciones y tapancos</li>
+                                    </ul>
+                                    <div class="project-buttons">
+                                        <a href="#contacto" class="btn btn-primary btn-md">
+                                            <i class="fa-solid fa-paper-plane"></i> Cotizar Estructura
+                                        </a>
+                                        <a href="assets/catalogo_mdj.pdf" download="Catalogo_General_MDJ.pdf" class="btn btn-secondary btn-md">
+                                            <i class="fa-solid fa-circle-down"></i> Catálogo PDF
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Category Card 3: Naves Industriales -->
+                        <div class="project-card-3d">
+                            <div class="project-card-header">
+                                <h3>Naves Industriales</h3>
+                                <p class="project-subtitle">Naves de Gran Claro & Cubiertas Industriales</p>
+                            </div>
+                            <div class="project-card-body">
+                                <div class="project-carousel" id="carousel-naves">
+                                    <div class="carousel-track-container">
+                                        <div class="carousel-track">
+                                            <div class="carousel-slide">
+                                                <img src="assets/estructura.png" alt="Construcción de Nave Industrial comercial por MDJ">
+                                                <div class="slide-caption">Montaje de Estructura de Acero IPR</div>
+                                            </div>
+                                            <div class="carousel-slide">
+                                                <img src="assets/estructura.png" alt="Techumbre comercial de gran claro por MDJ">
+                                                <div class="slide-caption">Nave Industrial de Gran Claro</div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    
+                                    <button class="carousel-btn prev" aria-label="Anterior"><i class="fa-solid fa-chevron-left"></i></button>
+                                    <button class="carousel-btn next" aria-label="Siguiente"><i class="fa-solid fa-chevron-right"></i></button>
+                                    
+                                    <div class="carousel-dots"></div>
+                                </div>
+                                
+                                <div class="project-details">
+                                    <p>Realizamos el diseño estructural, cálculo de cargas sismicas/viento, cimentación, fabricación y montaje completo de naves industriales, almacenes comerciales y bodegas de gran claro utilizando vigas IPR, canalones y cubiertas engargoladas.</p>
+                                    <ul class="project-specs">
+                                        <li><i class="fa-solid fa-check"></i> Cálculo y firma de Dro estructural</li>
+                                        <li><i class="fa-solid fa-check"></i> Montaje rápido con grúa y personal certificado</li>
+                                        <li><i class="fa-solid fa-check"></i> Techados de lámina KR-18 y panel sándwich</li>
+                                    </ul>
+                                    <div class="project-buttons">
+                                        <a href="#contacto" class="btn btn-primary btn-md">
+                                            <i class="fa-solid fa-paper-plane"></i> Cotizar Nave Industrial
+                                        </a>
+                                        <a href="assets/catalogo_naves.pdf" download="Catalogo_Naves_MDJ.pdf" class="btn btn-secondary btn-md">
+                                            <i class="fa-solid fa-circle-down"></i> Catálogo PDF
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Category Card 4: Portones Automatizados -->
+                        <div class="project-card-3d">
+                            <div class="project-card-header">
+                                <h3>Portones Automatizados</h3>
+                                <p class="project-subtitle">Aperturas Seguras & Estilo Moderno</p>
+                            </div>
+                            <div class="project-card-body">
+                                <div class="project-carousel" id="carousel-portones">
+                                    <div class="carousel-track-container">
+                                        <div class="carousel-track">
+                                            <div class="carousel-slide">
+                                                <img src="assets/porton.png" alt="Portón minimalista moderno automatizado por MDJ">
+                                                <div class="slide-caption">Portón Automatizado Minimalista</div>
+                                            </div>
+                                            <div class="carousel-slide">
+                                                <img src="assets/porton.png" alt="Portón residencial moderno de acero de MDJ">
+                                                <div class="slide-caption">Portón Residencial de Acero</div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    
+                                    <button class="carousel-btn prev" aria-label="Anterior"><i class="fa-solid fa-chevron-left"></i></button>
+                                    <button class="carousel-btn next" aria-label="Siguiente"><i class="fa-solid fa-chevron-right"></i></button>
+                                    
+                                    <div class="carousel-dots"></div>
+                                </div>
+                                
+                                <div class="project-details">
+                                    <p>Diseñamos y fabricamos portones automatizados a la medida (corredizos, abatibles, de libro, ascendentes). Ofrecemos sistemas de automatización con motores de alta velocidad y silenciosos, garantizando seguridad y comodidad en el acceso a tu residencia.</p>
+                                    <ul class="project-specs">
+                                        <li><i class="fa-solid fa-check"></i> Motores de apertura rápida y silenciosos integrados</li>
+                                        <li><i class="fa-solid fa-check"></i> Pintura automotriz anticorrosiva de alta gama</li>
+                                        <li><i class="fa-solid fa-check"></i> Estructuras robustas y preparadas para alto tráfico</li>
+                                    </ul>
+                                    <div class="project-buttons">
+                                        <a href="#contacto" class="btn btn-primary btn-md">
+                                            <i class="fa-solid fa-paper-plane"></i> Cotizar Portón
+                                        </a>
+                                        <a href="assets/catalogo_portones.pdf" download="Catalogo_Portones_MDJ.pdf" class="btn btn-secondary btn-md">
+                                            <i class="fa-solid fa-circle-down"></i> Catálogo PDF
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Category Card 5: Herrería de Diseño -->
+                        <div class="project-card-3d">
+                            <div class="project-card-header">
+                                <h3>Herrería de Diseño</h3>
+                                <p class="project-subtitle">Detalles Arquitectónicos a la Medida</p>
+                            </div>
+                            <div class="project-card-body">
+                                <div class="project-carousel" id="carousel-herreria">
+                                    <div class="carousel-track-container">
+                                        <div class="carousel-track">
+                                            <div class="carousel-slide">
+                                                <img src="assets/real_pergola1.jpg" alt="Barandales de acero y cristal por MDJ">
+                                                <div class="slide-caption">Barandales Minimalistas de Acero</div>
+                                            </div>
+                                            <div class="carousel-slide">
+                                                <img src="assets/real_pergola3.jpg" alt="Detalles de herrería de diseño por MDJ">
+                                                <div class="slide-caption">Pasamanos y Herrería Arquitectónica</div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    
+                                    <button class="carousel-btn prev" aria-label="Anterior"><i class="fa-solid fa-chevron-left"></i></button>
+                                    <button class="carousel-btn next" aria-label="Siguiente"><i class="fa-solid fa-chevron-right"></i></button>
+                                    
+                                    <div class="carousel-dots"></div>
+                                </div>
+                                
+                                <div class="project-details">
+                                    <p>Especialistas en herrería fina y de diseño. Fabricamos barandales minimalistas para escaleras y balcones con combinación de acero y cristal templado, puertas de seguridad con diseños de autor, pasamanos de acero inoxidable y escaleras de caracol o de emergencia.</p>
+                                    <ul class="project-specs">
+                                        <li><i class="fa-solid fa-check"></i> Acabado liso con pintura automotriz de poliuretano</li>
+                                        <li><i class="fa-solid fa-check"></i> Protecciones residenciales y puertas de seguridad</li>
+                                        <li><i class="fa-solid fa-check"></i> Instalación limpia, puntual y con anclajes de alta resistencia</li>
+                                    </ul>
+                                    <div class="project-buttons">
+                                        <a href="#contacto" class="btn btn-primary btn-md">
+                                            <i class="fa-solid fa-paper-plane"></i> Cotizar Herrería
+                                        </a>
+                                        <a href="assets/catalogo_herreria.pdf" download="Catalogo_Herreria_MDJ.pdf" class="btn btn-secondary btn-md">
+                                            <i class="fa-solid fa-circle-down"></i> Catálogo PDF
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+
+                <!-- Navigation Buttons for Outer Carousel -->
+                <button class="outer-carousel-btn prev" aria-label="Proyecto Anterior"><i class="fa-solid fa-chevron-left"></i></button>
+                <button class="outer-carousel-btn next" aria-label="Siguiente Proyecto"><i class="fa-solid fa-chevron-right"></i></button>
+                
+                <!-- Dots for Outer Carousel -->
+                <div class="outer-carousel-dots"></div>
+            </div>
+            
+        </div>
+    </section>
+
+    <!-- Contact & Location Section (Unified Form) -->
+    <section id="contacto" class="contact-section section-padding reveal-parent">
+        <div class="container">
+            <div class="contact-grid">
+                <div class="contact-form-wrapper reveal">
+                    <span class="section-subtitle text-left">Ponte en Contacto</span>
+                    <h2 class="section-title text-left">¡Hagamos tu Proyecto Realidad!</h2>
+                    <p class="section-desc">Escríbenos para solicitar una cotización formal o agendar una visita técnica a tu domicilio. Puedes enviarlo como correo o directamente a nuestro WhatsApp.</p>
+                    
+                    <form id="contact-form" class="contact-form">
+                        <div class="form-group">
+                            <label for="name"><i class="fa-solid fa-user"></i> Nombre Completo</label>
+                            <input type="text" id="name" class="form-control" placeholder="Escribe tu nombre completo" required>
+                        </div>
+                        <div class="form-row">
+                            <div class="form-group">
+                                <label for="email"><i class="fa-solid fa-envelope"></i> Correo Electrónico</label>
+                                <input type="email" id="email" class="form-control" placeholder="correo@ejemplo.com" required>
+                            </div>
+                            <div class="form-group">
+                                <label for="phone"><i class="fa-solid fa-phone"></i> Teléfono / Celular</label>
+                                <input type="tel" id="phone" class="form-control" placeholder="Ej: 442 123 4567" required>
+                            </div>
+                        </div>
+
+                        <!-- Tipo de Proyecto o Consulta -->
+                        <div class="form-group">
+                            <label for="project-type"><i class="fa-solid fa-hammer"></i> Servicio de Interés / Consulta</label>
+                            <select id="project-type" class="form-control">
+                                <option value="Consulta General">Consulta General / Otro Asunto</option>
+                                <option value="Pérgola de Diseño">Pérgola de Diseño (Residencial / Comercial)</option>
+                                <option value="Estructuras Metálicas">Estructuras Metálicas (Tapancos, Soporte Pesado)</option>
+                                <option value="Nave Industrial">Nave Industrial o Techumbre Estructural</option>
+                                <option value="Portón Automatizado">Portón Residencial Automatizado</option>
+                                <option value="Herrería de Diseño">Herrería de Diseño / Barandales</option>
+                            </select>
+                        </div>
+
+                        <!-- Campos opcionales para Cotización Rápida -->
+                        <div class="form-row" id="quote-dimensions-row">
+                            <div class="form-group">
+                                <label for="quote-width"><i class="fa-solid fa-arrows-left-right"></i> Ancho aprox. (m)</label>
+                                <input type="number" id="quote-width" class="form-control" placeholder="Ej: 4" min="1" max="50" step="0.5">
+                            </div>
+                            <div class="form-group">
+                                <label for="quote-length"><i class="fa-solid fa-arrows-up-down"></i> Largo aprox. (m)</label>
+                                <input type="number" id="quote-length" class="form-control" placeholder="Ej: 3" min="1" max="50" step="0.5">
+                            </div>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="message"><i class="fa-solid fa-comment-dots"></i> Platícanos sobre tu proyecto o consulta</label>
+                            <textarea id="message" class="form-control" rows="4" placeholder="Describe los detalles de tu consulta o las especificaciones del trabajo que deseas realizar..." required></textarea>
+                        </div>
+                        
+                        <div id="contact-status" class="form-status"></div>
+                        
+                        <div class="form-actions-row">
+                            <button type="submit" class="btn btn-primary">
+                                <i class="fa-solid fa-paper-plane"></i> Enviar Correo
+                            </button>
+                            <button type="button" id="btn-whatsapp-quote" class="btn btn-whatsapp">
+                                <i class="fa-brands fa-whatsapp"></i> Enviar por WhatsApp
+                            </button>
+                        </div>
+                    </form>
+                </div>
+                
+                <div class="contact-info-wrapper reveal">
+                    <div class="info-card">
+                        <h3>Información de Contacto</h3>
+                        <div class="info-items">
+                            <div class="info-item">
+                                <div class="info-icon"><i class="fa-solid fa-location-dot"></i></div>
+                                <div class="info-text">
+                                    <strong>Ubicación de Taller:</strong>
+                                    <p>Santa Bárbara, Corregidora, Qro.</p>
+                                </div>
+                            </div>
+                            <div class="info-item">
+                                <div class="info-icon"><i class="fa-solid fa-phone"></i></div>
+                                <div class="info-text">
+                                    <strong>Teléfono Directo / WhatsApp:</strong>
+                                    <p><a href="tel:+524426158952">+52 442 615 8952</a></p>
+                                </div>
+                            </div>
+                            <div class="info-item">
+                                <div class="info-icon"><i class="fa-solid fa-envelope"></i></div>
+                                <div class="info-text">
+                                    <strong>Correo Electrónico:</strong>
+                                    <p><a href="mailto:mario.mandujano.moreno@gmail.com">mario.mandujano.moreno@gmail.com</a></p>
+                                </div>
+                            </div>
+                            <div class="info-item">
+                                <div class="info-icon"><i class="fa-solid fa-clock"></i></div>
+                                <div class="info-text">
+                                    <strong>Horario de Atención:</strong>
+                                    <p>Lunes a Viernes: 8:00 AM - 6:00 PM<br>Sábados: 9:00 AM - 2:00 PM</p>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <!-- Google Maps Styled Placeholder -->
+                        <div class="map-placeholder">
+                            <div class="map-overlay">
+                                <i class="fa-solid fa-map-location-dot map-icon"></i>
+                                <span>Cobertura en Querétaro</span>
+                                <p>Damos servicio en Corregidora, Querétaro, El Marqués y alrededores.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container footer-container">
+            <div class="footer-info">
+                <a href="#" class="logo">
+                    <img src="assets/logo.png" alt="MDJ Soluciones Metálicas Logo" class="logo-img">
+                    <span class="logo-text">MDJ<span> Soluciones</span></span>
+                </a>
+                <p>Especialistas en transformar el metal en estructuras y pérgolas funcionales de alta calidad. Diseñado para durar toda la vida en Corregidora, Qro.</p>
+                <div class="social-links">
+                    <a href="https://www.facebook.com/share/18vtmzuEma/?mibextid=wwXIfr" target="_blank" aria-label="Facebook"><i class="fa-brands fa-facebook-f"></i></a>
+                    <a href="https://wa.me/524426158952" target="_blank" aria-label="WhatsApp"><i class="fa-brands fa-whatsapp"></i></a>
+                    <a href="#" aria-label="Instagram" id="footer-instagram-link"><i class="fa-brands fa-instagram"></i></a>
+                </div>
+            </div>
+            
+            <div class="footer-links">
+                <h4>Enlaces Rápidos</h4>
+                <ul>
+                    <li><a href="#inicio">Inicio</a></li>
+                    <li><a href="#nosotros">Nosotros</a></li>
+                    <li><a href="#servicios">Servicios</a></li>
+                    <li><a href="#proyectos">Proyectos</a></li>
+                    <li><a href="#contacto">Contacto</a></li>
+                </ul>
+            </div>
+            
+            <div class="footer-services">
+                <h4>Nuestros Servicios</h4>
+                <ul>
+                    <li><a href="#servicios">Pérgolas de Acero</a></li>
+                    <li><a href="#servicios">Naves Industriales</a></li>
+                    <li><a href="#servicios">Portones Automatizados</a></li>
+                    <li><a href="#servicios">Estructuras Pesadas</a></li>
+                    <li><a href="#servicios">Herrería de Diseño</a></li>
+                </ul>
+            </div>
+        </div>
+        
+        <div class="footer-bottom">
+            <div class="container footer-bottom-content">
+                <p>&copy; 2026 MDJ Soluciones Metálicas. Todos los derechos reservados.</p>
+                <div class="footer-bottom-links">
+                    <a href="#">Aviso de Privacidad</a>
+                    <a href="#">Términos de Servicio</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Floating WhatsApp Widget -->
+    <a href="https://wa.me/524426158952?text=Hola%20MDJ%20Soluciones%20Met%C3%A1licas,%20me%20gustar%C3%ADa%20solicitar%20informaci%C3%B3n%20sobre%20un%20proyecto." class="floating-whatsapp" target="_blank" aria-label="Contacto por WhatsApp">
+        <i class="fa-brands fa-whatsapp"></i>
+        <span class="tooltip">¿Tienes dudas? ¡Escríbenos!</span>
+    </a>
+
+    <!-- Custom Floating Cursor -->
+    <div class="cursor-dot" id="cursor-dot"></div>
+    <div class="cursor-outline" id="cursor-outline"></div>
+
+    <!-- Main JS -->
+    <script src="script.js"></script>
+</body>
+</html>
